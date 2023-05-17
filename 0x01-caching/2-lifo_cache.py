@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Last-In First-Out caching module.
+"""This module creates a class LIFOCache that inherits from BaseCaching and is a caching system
 """
 from collections import OrderedDict
 
@@ -7,18 +7,18 @@ from base_caching import BaseCaching
 
 
 class LIFOCache(BaseCaching):
-    """Represents an object that allows storing and
-    retrieving items from a dictionary with a LIFO
-    removal mechanism when the limit is reached.
+    """This allows items to be stored and
+    retrieved from a dictionary with a LIFO
+    removal principle when the limit is reached.
     """
     def __init__(self):
-        """Initializes the cache.
+        """This initializes the cache.
         """
         super().__init__()
         self.cache_data = OrderedDict()
 
     def put(self, key, item):
-        """Adds an item in the cache.
+        """This adds an item in the cache.
         """
         if key is None or item is None:
             return
