@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Least Recently Used caching module.
+"""This module creates a class LRUCache that inherits from BaseCaching and is a caching system.
 """
 from collections import OrderedDict
 
@@ -7,18 +7,18 @@ from base_caching import BaseCaching
 
 
 class LRUCache(BaseCaching):
-    """Represents an object that allows storing and
+    """This allows storing and
     retrieving items from a dictionary with a LRU
-    removal mechanism when the limit is reached.
+    removal principle when the limit is reached.
     """
     def __init__(self):
-        """Initializes the cache.
+        """This initializes the cache.
         """
         super().__init__()
         self.cache_data = OrderedDict()
 
     def put(self, key, item):
-        """Adds an item in the cache.
+        """This adds an item in the cache.
         """
         if key is None or item is None:
             return
