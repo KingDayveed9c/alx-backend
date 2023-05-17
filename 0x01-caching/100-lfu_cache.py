@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Least Frequently Used caching module.
+"""Advanced task: Create a class LFUCache that inherits from BaseCaching and is a caching system.
 """
 from collections import OrderedDict
 
@@ -7,21 +7,18 @@ from base_caching import BaseCaching
 
 
 class LFUCache(BaseCaching):
-    """Represents an object that allows storing and
+    """This is an object that allows storing and
     retrieving items from a dictionary with a LFU
     removal mechanism when the limit is reached.
     """
     def __init__(self):
-        """Initializes the cache.
+        """This initializes the cache.
         """
         super().__init__()
         self.cache_data = OrderedDict()
         self.keys_freq = []
 
     def __reorder_items(self, mru_key):
-        """Reorders the items in this cache based on the most
-        recently used item.
-        """
         max_positions = []
         mru_freq = 0
         mru_pos = 0
@@ -44,7 +41,7 @@ class LFUCache(BaseCaching):
         self.keys_freq.insert(ins_pos, [mru_key, mru_freq])
 
     def put(self, key, item):
-        """Adds an item in the cache.
+        """This adds an item in the cache.
         """
         if key is None or item is None:
             return
