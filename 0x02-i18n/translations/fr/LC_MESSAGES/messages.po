@@ -1,5 +1,5 @@
 # French translations for i18n.
-# Copyright (C) 2022 Organization
+# Copyright (C) 2023 Organization
 # This file is distributed under the same license as the i18n project.
 # Author <emailaddress>, 2023.
 #
