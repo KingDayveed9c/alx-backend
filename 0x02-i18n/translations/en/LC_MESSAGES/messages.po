@@ -1,7 +1,7 @@
 # English translations for i18n.
-# Copyright (C) 2022 organization
+# Copyright (C) 2023 organization
 # This file is distributed under the same license as the i18n project.
-# Author <emailaddress>, 2022.
+# Author <emailaddress>, 2023.
 #
 msgid ""
 msgstr ""
