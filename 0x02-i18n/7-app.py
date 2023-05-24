@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Flask app
+A Flask app: Infer appropriate time zone
 """
 from flask import (
     Flask,
