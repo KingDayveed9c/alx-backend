@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Flask app
+A Flask app: Display the current time
 """
 import locale
 from flask import (
