@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Flask app
+A Flask app: Mock logging in
 """
 from flask import (
     Flask,
