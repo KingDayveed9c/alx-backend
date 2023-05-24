@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Flask app
+A Flask app: Force locale with URL parameter
 """
 from flask import (
     Flask,
