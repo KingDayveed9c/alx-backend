@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Flask app
+Basic Babel setup
 """
 from flask import Flask, render_template
 from flask_babel import Babel
@@ -8,7 +8,7 @@ from flask_babel import Babel
 
 class Config(object):
     """
-    Configuration for Babel
+    Configuration
     """
     LANGUAGES = ["en", "fr"]
     BABEL_DEFAULT_LOCALE = "en"
@@ -23,7 +23,7 @@ babel = Babel(app)
 @app.route('/', strict_slashes=False)
 def index() -> str:
     """
-    Handles / route
+    Handles
     """
     return render_template('1-index.html')
 

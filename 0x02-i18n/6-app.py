@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Flask app
+A Flask app: Use user locale
 """
 from flask import (
     Flask,

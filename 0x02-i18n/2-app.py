@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Flask app
+A Flask app:  Get locale from request
 """
 from flask import (
     Flask,
